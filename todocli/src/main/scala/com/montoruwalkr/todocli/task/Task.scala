@@ -4,12 +4,12 @@ import java.util.UUID
 
 case class Task(
                  id: UUID = UUID.randomUUID(),
-                 title: String = "",
-                 description: String = "",
-                 priority: String = "",
-                 reminders: String = "",
-                 dueDate: String = "",
-                 tags: String = "",
-                 status: String = "",
-                 attachments: String = ""
+                 title: Option[String],
+                 description: Option[String],
+                 priority: Option[String],
+                 reminders: Option[String],
+                 dueDate: Option[String],
+                 tags: Option[String],
+                 status: Option[String],
+                 attachments: Option[String]
                )
